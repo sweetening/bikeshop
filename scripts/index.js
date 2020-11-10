@@ -5,7 +5,7 @@ function renderProduct(product) {
     slideProduct.className = "slide-product";
     slide.appendChild(slideProduct);
   var slideProductImg = document.createElement("img");
-    slideProductImg.src = "https://image.spreadshirtmedia.com/image-server/v1/mp/products/"+product.productId+"/views/1,width=378,height=378,backgroundColor=F2F2F2";
+    slideProductImg.src = "https://www.tracksupermarket.com/media/catalog/product/cache/1/small_image/840x/040ec09b1e35df139433887a97daa66f/"+product.productId+",width=378,height=378,backgroundColor=F2F2F2";
     slideProduct.appendChild(slideProductImg);
   var slideProductName = document.createElement("p");
     slideProductName.innerText = product.name;
@@ -20,9 +20,9 @@ function renderProduct(product) {
   //
   //  <div class="swiper-slide">
   //    <div class="slide-product">
-  //     <img src="https://image.spreadshirtmedia.com/image-server/v1/mp/products/T491A801PA3567PT17X23Y43D12496463FS3433/views/1,width=378,height=378,backgroundColor=F2F2F2" alt="Photo of Product for SliderAPI">
-  //     <p class="slide-product-name">Narwhal Rainbow Stormtrooper</p>
-  //     <p class="slide-product-price">$29.99</p>
+  //     <img src="https://www.tracksupermarket.com/media/catalog/product/cache/1/small_image/840x/040ec09b1e35df139433887a97daa66f/3/r/3rensho_aluminum_road_frame_takizawa_blue_10.jpg,width=378,height=378,backgroundColor=F2F2F2" alt="Photo of Product for SliderAPI">
+  //     <p class="slide-product-name">3Rensho - Light Blue - 56cm - NJS Track Frame</p>
+  //     <p class="slide-product-price">$1581</p>
   //    </div>
   //  </div>
 
@@ -31,7 +31,7 @@ function renderProduct(product) {
 
 function loadProducts(){
   var productsSlider = document.getElementById("products-slider");
-  fetch('https://www.spreadshirt.com/shopData/list?query=K118614&locale=us_US')
+  fetch('https://www.https://www.tracksupermarket.com/media/catalog/product/cache/1/small_image/')
     .then(
       function(response) {
         if (response.status !== 200) {
